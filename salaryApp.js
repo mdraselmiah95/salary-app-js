@@ -16,7 +16,7 @@ const formatChartData = function (data) {
     },
   ];
 };
-
+//get chart
 const getChartItems = function (data) {
   const chartItems = [];
   for (const i in data) {
@@ -115,9 +115,9 @@ function secondHandler(e) {
 const showLastItem = function () {
   const items = salary_data;
   let lastKey;
-  for (const key in items){
+  for (const key in items) {
     lastKey = key;
-  };
+  }
   const lastItem = items[lastKey];
   const lastRecord = getRecord(lastItem.name, lastItem.salary);
   displayLastItemDialog(lastRecord);
